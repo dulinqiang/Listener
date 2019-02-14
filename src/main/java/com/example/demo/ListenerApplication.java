@@ -10,12 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ListenerApplication {
 
     public static void main(String[] args) {
-
-        ApplicationContext context=SpringApplication.run(ListenerApplication.class, args);
-//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigTest.class);
-        EventPublish eventPbulish = context.getBean(EventPublish.class);
-        eventPbulish.publish("zhangsan");
-//        ((ConfigurableApplicationContext) context).close();
+       SpringApplication.run(ListenerApplication.class, args);
     }
 
 }
